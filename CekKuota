@@ -1,0 +1,5 @@
+public class CekKuota {
+    public void cekKuota(PaketData paket) {
+        System.out.println("Paket " + paket.namaPaket + " memiliki kuota " + paket.kuota + " MB.");
+    }
+}

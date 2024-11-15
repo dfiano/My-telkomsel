@@ -1,0 +1,15 @@
+public class PaketData {
+    String namaPaket;
+    int kuota;
+    int harga;
+
+    public PaketData(String namaPaket, int kuota, int harga) {
+        this.namaPaket = namaPaket;
+        this.kuota = kuota;
+        this.harga = harga;
+    }
+
+    public String getPaketInfo() {
+        return "Nama Paket: " + namaPaket + "\nKuota: " + kuota + " MB\nHarga: Rp " + harga;
+    }
+}

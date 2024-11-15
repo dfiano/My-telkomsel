@@ -1,0 +1,29 @@
+public class Pembayaran {
+    int saldo;
+
+    public Pembayaran(int saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean cekSaldo(int jumlah) {
+        return saldo >= jumlah;
+    }
+
+    public void topUp(int jumlah) {
+        saldo += jumlah;
+        System.out.println("Top up berhasil. Saldo Anda sekarang: Rp " + saldo);
+    }
+
+    public void bayar(int jumlah) {
+        if (cekSaldo(jumlah)) {
+            saldo -= jumlah;
+            System.out.println("Pembayaran berhasil.");
+        } else {
+            System.out.println("Saldo tidak cukup.");
+        }
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+}

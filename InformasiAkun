@@ -1,0 +1,5 @@
+public class InformasiAkun {
+    public void tampilkanInformasi(AkunTelkomsel akun) {
+        System.out.println(akun.getInformasiAkun());
+    }
+}
